@@ -4,7 +4,7 @@ class MiFooter
     this.innerHTML = /* html */
       `<p>
         &copy; 2023
-        Ricardo Armando Machorro Reyes.
+        Vladimir Reza Cerna.
       </p>`;
   }
 }

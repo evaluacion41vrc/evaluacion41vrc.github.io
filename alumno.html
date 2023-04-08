@@ -5,7 +5,7 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Restaurante</title>
+  <title>Alumno</title>
   <script
     src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js">
     </script>
@@ -30,7 +30,7 @@
   <form name="forma">
     <mi-nav></mi-nav>
     <header>
-      <h1>Restaurante</h1>
+      <h1>Alumno</h1>
       <div class="herramientas">
         <a href="alumnos.html">
           Cancelar</a>
@@ -43,14 +43,14 @@
     </header>
     <p>
       <label>
-        Nombre
+        Matricula
         <input name="matricula"
           type="text" required>
       </label>
     </p>
     <p>
       <label>
-        Tipo de Comida
+        Nombre
         <input name="nombre"
           type="text" required>
       </label>
@@ -64,18 +64,19 @@
     </p>
     <p>
       <label>
-        Direccion
+        Grupo
         <input name="grupo"
           type="text" required>
       </label>
     </p>
     <p>
       <label>
-        Fecha de Apertura
+        Fecha
         <input name="fecha" type="date" required>
       </label>
     </p>
   </form>
+  <mi-footer></mi-footer>
   <script type="module"
     src="js/CtrlAlumno.js">
     </script>

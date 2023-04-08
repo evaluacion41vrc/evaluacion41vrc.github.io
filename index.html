@@ -5,16 +5,33 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Restaurantes</title>
+  <title>Sesión</title>
+  <!--
+    Carga el núcleo de Firebase
+    JS SDK
+  -->
   <script
     src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js">
     </script>
+  <!--
+    Agrega el manejo de
+    autenticación.
+  -->
   <script
     src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js">
     </script>
+  <!--
+    Agrega el manejo de bases de
+    datos.
+  -->
   <script
     src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js">
     </script>
+  <!--
+    Configura la app usando la
+    información del sitio de
+    Firebase.
+  -->
   <script src="js/init.js">
   </script>
   <script type="module"
@@ -30,24 +47,44 @@
     href="css/estilos.css">
 </head>
 <body>
-  <mi-nav></mi-nav>
-  <header>
-    <h1>RESTAURANTES</h1>
-    <div class="herramientas">
-      <a
-        href="alumnoNuevo.html">
-        Agregar…</a>
-    </div>
-  </header>
-  <ul id="lista" class="lista">
-    <li>
-      <mi-progreso>
-      </mi-progreso>
-    </li>
-  </ul>
+ <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1>Sesión</h1>
+      <div class="herramientas">
+        <button
+          type="button"
+          name="terminarSesión">
+          Terminar Sesión
+        </button>
+      </div>
+    </header>
+    <figure>
+      <img id="avatar" src=""
+        alt="Avatar">
+    </figure>
+    <p>
+      <label>
+        Email
+        <output name="email">
+          <mi-progreso>
+          </mi-progreso>
+        </output>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <output name="nombre">
+          <mi-progreso>
+          </mi-progreso>
+        </output>
+      </label>
+    </p>
+  </form>
+  <mi-footer></mi-footer>ss
   <script type="module"
-    src="js/CtrlAlumnos.js">
+    src="js/CtrlSesion.js">
     </script>
 </body>
 </html>
-
